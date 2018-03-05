@@ -1,0 +1,227 @@
+<!DOCTYPE HTML>
+<!--
+	Miniport by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Thiago Anderson</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+		<link rel="icon" type="image/png" href="images/perfil2.jpg" />
+
+
+		<!-- include alertify.css -->
+	    <link rel="stylesheet" href="assets/alertify/css/alertify.css">
+	    <!-- include boostrap theme  -->
+	    <link rel="stylesheet" href="assets/alertify/css/themes/bootstrap.css">
+	    <!-- include alertify script -->
+	    <script src="assets/alertify/alertify.js"></script>
+	    <script type="text/javascript">
+	        //override defaults
+	        alertify.defaults.glossary.title = '';
+	        alertify.defaults.glossary.ok = 'Voltar';
+	        alertify.defaults.glossary.cancel = 'Cancelar';
+	        alertify.defaults.transition = "slide";
+	        alertify.defaults.theme.ok = "btn btn-primary";
+	        alertify.defaults.theme.cancel = "btn btn-danger";
+	        alertify.defaults.theme.input = "form-control";
+	    </script>
+
+
+	</head>
+	<body>
+
+		<!-- Nav -->
+			<nav id="nav">
+				<ul class="container">
+					<li><a href="#top">Início</a></li>
+					<li><a href="#text">Sobre</a></li>
+					<li><a href="#work">Trabalhos</a></li>
+					<!-- <li><a href="#portfolio">Portfolio</a></li> -->
+					<li><a href="#contact">Contato</a></li>
+				</ul>
+			</nav>
+
+		<!-- Home -->
+			<div class="wrapper style1 first" id="top">
+				<article class="container">
+					<div class="row">
+						<div class="4u 12u(mobile)">
+							<span class="image fit"><img src="images/perfil2.jpg" alt="" /></span>
+						</div>
+						<div class="8u 12u(mobile)">
+							<header>
+								<h1>Olá. Sou <strong>Thiago Anderson</strong>.</h1>
+							</header>
+							<p>Aqui, apresento-me para a internet.</p>
+							<a href="#text" class="button big scrolly">Conheça-me mais</a>
+						</div>
+					</div>
+				</article>
+			</div>
+
+		<!-- Work -->
+			<div class="wrapper style2">
+				<article id="text">
+					<header>
+						<p style="margin-left: 50px; margin-right: 50px;">Tenho formação técnica em informática pelo IFRN e atualmente estou cursando Tecnologia da informação na UFRN. Para não fazer aqueles textões, meu currículo completo está <a href="curriculo_thiago.pdf">aqui</a>, meu <a href="https://www.linkedin.com/in/thiago-anderson">likedin</a>, e meu lattes é <a href="http://lattes.cnpq.br/6468941271149840">nesse link</a>. Minha paixão mesmo é programação e aqui apresento alguns dos meus trabalhos.</p>
+					</header>
+					<footer>
+						<a href="#work" class="button big scrolly">Trabalhos</a>
+					</footer>
+				</article>
+			</div>
+
+		<!-- Portfolio -->
+			<div class="wrapper style3">
+				<article>
+					<header>
+						<h2>Trabalhos como desenvolvedor</h2>
+						<p>Projetos que participei como desenvovedor full stack.</p>
+					</header>
+					<div class="container">
+						<div class="row">
+							<div class="4u 12u(mobile)" id="work">
+
+								<script>
+                                var slideIndex = 1;
+								showDivs(slideIndex);
+
+								function plusDivs(n) {
+								  showDivs(slideIndex += n);
+								}
+
+								function showDivs(n) {
+								  var i;
+								  var x = document.getElementsByClassName("mySlides");
+								  if (n > x.length) {slideIndex = 1}    
+								  if (n < 1) {slideIndex = x.length}
+								  for (i = 0; i < x.length; i++) {
+								     x[i].style.display = "none";  
+								  }
+								  x[slideIndex-1].style.display = "block";  
+								}
+                                    function manos() {
+                                         alertify.alert().set({'startMaximized':true, 'message':'<div class="w3-content w3-display-container" width="auto"><div style="width:20%; margin-top:10%; float: left; text-align: center;"><button class="w3-button w3-display-left" onclick="plusDivs(-1)">&#10094;</button></div><div style="width:60%; float: left; text-align: center;"><img class="mySlides" src="images/manos.png" style="width:100%;display:none; text-align: center;"><img class="mySlides" src="images/manos2.png" style="width:100%; text-align: center;"><img class="mySlides" src="images/manos3.png" style="width:100%;display:none; text-align: center;"><img class="mySlides" src="images/manos4.png" style="width:100%;display:none; text-align: center;"><img class="mySlides" src="images/manos5.png" style="width:100%;display:none; text-align: center;"><img class="mySlides" src="images/manos6.png" style="width:100%;display:none; text-align: center;"></div><div style="width:20%; margin-top:10%; float: left; text-align: center;"><button class="w3-button w3-display-right" onclick="plusDivs(1)">&#10095;</button></div></div>'}).show(); 
+                                    }
+
+                                    function fases() {
+                                         alertify.alert().set({'startMaximized':true, 'message':'<div class="w3-content w3-display-container" width="auto"><div style="width:20%; margin-top:10%; float: left; text-align: center;"><button class="w3-button w3-display-left" onclick="plusDivs(-1)">&#10094;</button></div><div style="width:60%; float: left; text-align: center;"><img class="mySlides" src="images/fases2.png" style="width:100%;display:none; text-align: center;"><img class="mySlides" src="images/fases10.png" style="width:100%;display:none; text-align: center;"><img class="mySlides" src="images/fases11.png" style="width:100%;display:none; text-align: center;"><img class="mySlides" src="images/fases3.png" style="width:100%; text-align: center;"><img class="mySlides" src="images/fases4.png" style="width:100%;display:none; text-align: center;"><img class="mySlides" src="images/fases5.png" style="width:100%;display:none; text-align: center;"><img class="mySlides" src="images/fases6.png" style="width:100%;display:none; text-align: center;"><img class="mySlides" src="images/fases7.png" style="width:100%;display:none; text-align: center;"><img class="mySlides" src="images/fases8.png" style="width:100%;display:none; text-align: center;"><img class="mySlides" src="images/fases9.png" style="width:100%;display:none; text-align: center;"></div><div style="width:20%; margin-top:10%; float: left; text-align: center;"><button class="w3-button w3-display-right" onclick="plusDivs(1)">&#10095;</button></div></div>'}).show(); 
+                                    }
+
+                                    function clash() {
+                                         alertify.alert().set({'startMaximized':true, 'message':'<div class="w3-content w3-display-container" width="auto"><div style="width:20%; margin-top:10%; float: left; text-align: center;"><button class="w3-button w3-display-left" onclick="plusDivs(-1)">&#10094;</button></div><div style="width:60%; float: left; text-align: center;"><img class="mySlides" src="images/cc2.png" style="width:100%;display:none; text-align: center;"><img class="mySlides" src="images/cc3.png" style="width:100%; text-align: center;"></div><div style="width:20%; margin-top:10%; float: left; text-align: center;"><button class="w3-button w3-display-right" onclick="plusDivs(1)">&#10095;</button></div></div>'}).show(); 
+                                    }
+
+                                </script>
+
+
+								<article class="box style2">
+									<a href="#" class="image featured"><img src="images/manos.png" onclick="manos()" alt="" /></a>
+									<h3><a href="#" onclick="manos()">ManOS</a></h3>
+									<p>Sistema de gerenciamento de manutenção.<br></p>
+									
+									<div style="width:100%; margin-bottom: 50px;">
+										<div style="width:50%; float: left; padding-left: 20%;">
+											<a href="#" onclick="manos()">+Fotos</a>
+										</div>	
+										<div style="width:50%; float: left; padding-right: 20%;">
+											<a href="http://www2.ifrn.edu.br/manos/">Acesse</a>
+										</div>	
+									</div>
+
+								</article>
+							</div>
+							<div class="4u 12u(mobile)">
+								<article class="box style2" style="height: 420px;">
+									<a href="#" class="image featured"><img src="images/fases2.png" onclick="fases()" alt="" style="height: 200px;" /></a>
+									<h3><a href="#" onclick="fases()">FaSEs Web</a></h3>
+									<p>Fábrica de software escola do IFRN.<br></p>
+
+									<div style="width:100%; margin-bottom: 50px; margin-top: 65px;">
+										<div style="width:50%; float: left; padding-left: 20%;">
+											<a href="#" onclick="fases()">+Fotos</a>
+										</div>	
+										<div style="width:50%; float: left; padding-right: 20%;">
+											<a href="http://fases.ifrn.edu.br/fases/">Acesse</a>
+										</div>	
+									</div>
+
+								</article>
+							</div>
+							<div class="4u 12u(mobile)">
+								<article class="box style2">
+									<a href="#" onclick="clash()" class="image featured"><img src="images/cc.png" alt="" /></a>
+									<h3><a href="#" onclick="clash()">Calculadora Clash of Clans</a></h3>
+									<p>Desenvolvida para o game.<br></p>
+									<div style="width:100%; margin-bottom: 50px;">
+										<div style="width:50%; float: left; padding-left: 20%;">
+											<a href="#" onclick="clash()">+Fotos</a>
+										</div>	
+										<div style="width:50%; float: left; padding-right: 20%;">
+											<a href="http://codepen.io/ThiagoAnderson/full/qNaRvo/">Acesse</a>
+										</div>	
+									</div>
+								</article>
+							</div>
+						</div>
+					</div>
+					<footer>
+						<a href="#contact" class="button big scrolly">Contatos</a>
+					</footer>
+				</article>
+			</div>
+
+		<!-- Contact -->
+			<div class="wrapper style4">
+				<article class="container 75%">
+						<div class="row">
+							<div class="12u">
+								<hr />
+								<h3 id="contact">Encontre-me em...</h3>
+								<ul class="social">
+									<li><a class="icon fa-youtube"><img src="images/icon-gmail2.png" title="thiagoanderson16@gmail.com" style="float: left; width: 40px; height: 40px; margin-top: -45px; position: absolute; margin-left: -20px;"></a></li>
+									<li><a href="https://github.com/ThiagoAnderson16" class="icon fa-github"><span class="label">Github</span></a></li>
+									<li><a href="https://www.facebook.com/thiagoanderson.costa" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+									<li><a href="https://www.instagram.com/thiago_anderson16/" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
+
+									<!--
+									<li><a href="#" class="icon fa-instagram"><span>Instagram</span></a></li>
+									<li><a href="#" class="icon fa-foursquare"><span>Foursquare</span></a></li>
+									<li><a href="#" class="icon fa-skype"><span>Skype</span></a></li>
+									<li><a href="#" class="icon fa-soundcloud"><span>Soundcloud</span></a></li>
+									<li><a href="#" class="icon fa-youtube"><span>YouTube</span></a></li>
+									<li><a href="#" class="icon fa-blogger"><span>Blogger</span></a></li>
+									<li><a href="#" class="icon fa-flickr"><span>Flickr</span></a></li>
+									<li><a href="#" class="icon fa-vimeo"><span>Vimeo</span></a></li>
+									-->
+								</ul>
+								<hr />
+							</div>
+						</div>
+					
+					<footer>
+						<ul id="copyright">
+							<li>&copy; Untitled. All rights reserved.</li>
+						</ul>
+					</footer>
+				</article>
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/skel-viewport.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
